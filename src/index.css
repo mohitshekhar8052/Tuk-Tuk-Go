@@ -1,3 +1,21 @@
+/* Leaflet Map Styles */
+@import 'leaflet/dist/leaflet.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom map marker fixes */
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-control-zoom a {
+  font-size: 18px;
+  line-height: 26px;
+}

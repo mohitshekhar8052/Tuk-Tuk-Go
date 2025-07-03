@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Direct HTML Test 🚗</h1>
+        <p>This is a direct HTML file test</p>
+        <p>If you can see this, your browser is working</p>
+        <p>Time: <span id="time"></span></p>
+        <script>
+            document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        </script>
+    </div>
+</body>
+</html>
